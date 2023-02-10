@@ -1,9 +1,13 @@
 {
+  "homepage": "https://myusername.github.io/growmeorganic",
   "name": "internshiptest",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -17,6 +21,7 @@
     "@mui/material": "^5.11.8",
     "@mui/styled-engine-sc": "^5.11.0",
     "@mui/x-data-grid": "^5.17.23",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
