@@ -1,10 +1,14 @@
 {
-  "homepage": "https://myusername.github.io/growmeorganic",
+  "homepage": "https://jazimrashid.github.io/growmeorganic",
   "name": "internshiptest",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    
+     
+     
+      
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
@@ -34,3 +38,5 @@
     "vite": "^4.1.0"
   }
 }
+
+     

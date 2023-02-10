@@ -7,11 +7,13 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Routes>
+      <Datalist />
+      <Form />
+      {/* <Routes>
         <Route exact path="/" element={<Form />} />
 
         <Route exact path="/Home" element={<Datalist />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

@@ -5,8 +5,8 @@ import {MemoryRouter} from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MemoryRouter>
+    {/* <MemoryRouter > */}
     <App />
-    </MemoryRouter>
+    {/* </MemoryRouter> */}
   </React.StrictMode>,
 )
