@@ -27,8 +27,9 @@ export default function Datalist() {
       },[]);
   return (
     <div className="container">
-      <div className="headline">
-       <h1>Data From an API "https://jsonplaceholder.typicode.com/users"</h1> 
+      <div>
+        <img src="/src/assets/GrowMeOrganic.png" alt="" />
+       <h1 className="header">Data From an API "https://jsonplaceholder.typicode.com/users"</h1> 
       </div>
     <Box justify="center" sx={{ height: 700, width: '100%' }}>
       <DataGrid
