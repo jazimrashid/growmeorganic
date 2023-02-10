@@ -9,13 +9,13 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const theme = createTheme();
 
 export default function Form() {
   const [errorMessage, setErrorMessage] = useState("");  
-  // const navigate = useNavigate();   //--->For Routing
+  const navigate = useNavigate();   //--->For Routing
   const [formData, setFormData] = useState({    //--->Setting Initial State of Input Fields
     email: "",
     password: "",
@@ -43,7 +43,7 @@ export default function Form() {
       password: data.get("password"),
     });
     localStorage.setItem("formData", JSON.stringify(formData));
-    // navigate("/Home");  //---->navigating to home on submit event
+    navigate("/Home");  //---->navigating to home on submit event
   };
   //----> on changing of input fields 
   const handleChange = (event) => {
