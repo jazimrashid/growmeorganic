@@ -28,7 +28,7 @@ export default function Form() {
       !formData.name ||
       !formData.email ||
       formData.password.length < 8 ||
-      formData.email.indexOf("@") != -1
+      formData.email.indexOf("@") === -1
     ) {
       setErrorMessage(
         "please enter all your correct details : valid email, password length>=8"
